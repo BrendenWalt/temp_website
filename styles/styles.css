@@ -2,7 +2,22 @@ a,
 h1,
 h2 {
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: 'Prompt', Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  margin: 0.1em;
+}
+h2 {
+  font-size: 58px;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  line-height: 0.85em;
+  margin: 0.1em;
+  text-transform: uppercase;
 }
 i {
   color: #ffffff;
@@ -11,6 +26,7 @@ i {
 
 body {
   background-color: #4FBEBF;
+  background: linear-gradient(140deg, #e05300 0%, #fe6a02 50%, #02b4a8 50%, #02c9bb 50%, #0bdcb6 100%);
   margin: 0;
   overflow-x: hidden;
 }
@@ -28,7 +44,7 @@ body {
   border-radius: 20px;
   display: inline-block;
   padding: 30px 50px;
-  width: 88%;
+  width: 70%;
 }
 
 #profile-pic img {
