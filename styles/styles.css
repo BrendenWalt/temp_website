@@ -1,0 +1,81 @@
+a,
+h1,
+h2 {
+  color: #ffffff;
+  font-family: sans-serif;
+}
+i {
+  color: #ffffff;
+  font-size: 31px;
+}
+
+body {
+  background-color: #4FBEBF;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#name-card {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  width: 75%; 
+}
+#name-card div {
+  position: relative;
+  left: -50%;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 20px;
+  display: inline-block;
+  padding: 30px 50px;
+  width: 88%;
+}
+
+#profile-pic img {
+  border-radius: 50%;
+  height: 350px;
+  margin: 0 auto;
+  width: 350px;
+}
+#resume {
+  margin: 35px 0;
+}
+#resume a {
+  color: #ffffff;
+  display: inline-block;
+  border: 3px solid #ffffff;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.site-container {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.social-link {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 65px;
+  margin: 0 15px;
+  text-align: center;
+  width: 65px;
+}
+.social-link i {
+  line-height: 63px;
+}
+
+.summary-container {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-container {
+      height: 100vh;
+    }
+}
