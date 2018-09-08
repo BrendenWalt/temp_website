@@ -48,7 +48,10 @@ body {
   padding: 15px 2% 30px;
   width: 96%;
 }
-
+.page-message {
+  text-transform: none;
+  letter-spacing: 0.1em;
+}
 #profile-pic {
   display: inline-block;
   border-radius: 50%;
