@@ -39,12 +39,12 @@ body {
   min-height: 100vh;
 }
 
-#name-card {
-  background-color: rgba(0,0,0,0.1);
+#name-card div{
+  background-color: rgba(0,0,0,0.08);
   border-radius: 30px;
   box-sizing: border-box;
   display: inline-block;
-  margin-top: -45px;
+  margin-top: -30px;
   padding: 15px 2% 30px;
   width: 96%;
 }
@@ -52,6 +52,8 @@ body {
 #profile-pic {
   display: inline-block;
   border-radius: 50%;
+  position: relative;
+  z-index: 2;
 }
 
 #profile-pic img {
@@ -132,7 +134,7 @@ body {
     margin: 0.1em;
     white-space: nowrap;
   }
-  #name-card {
+  #name-card div{
     padding: 30px 2%;
   }
   .summary-container {
@@ -150,8 +152,9 @@ body {
     font-size: 58px;
     white-space: nowrap;
   }
-  #name-card {
+  #name-card div{
     border-radius: 20px;
+    margin-top: -45px;
     padding: 30px 8%;
     width: auto;
   }
@@ -167,6 +170,6 @@ body {
     margin-top: 0px;
   }
   .summary-container {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 }
