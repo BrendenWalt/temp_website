@@ -10,18 +10,18 @@ a {
   text-transform: capitalize;
 }
 h1 {
-  font-size: 70px;
+  font-size: 13vw;
   font-weight: 600;
   letter-spacing: 0.05em;
-  line-height: 1em;
-  margin: 0.1em;
+  line-height: 0.9em;
+  margin: 0.1em 0.1em 0.2em;
 }
 h2 {
-  font-size: 58px;
+  font-size: 8vw;
   font-weight: 100;
   letter-spacing: 0.20em;
   line-height: 0.85em;
-  margin: 0.1em;
+  margin: 0.1em 0.1em 0.1em 0.2em;
   text-transform: uppercase;
 }
 i {
@@ -32,23 +32,21 @@ i {
 body {
   background-color: #0bdcb6;
   background: linear-gradient(18deg, #b70101 0%, #fe6a02 64%, #0f968d 64%, #20aba1 64.5%, #7effe7 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 #name-card {
-  position: absolute;
-  bottom: -127px;
-  left: 50%;
-  width: 75%; 
-}
-#name-card div {
-  position: relative;
-  left: -50%;
   background-color: rgba(0,0,0,0.1);
-  border-radius: 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
   display: inline-block;
-  padding: 30px 8%;
+  margin-top: -45px;
+  padding: 15px 2% 30px;
+  width: 96%;
 }
 
 #profile-pic {
@@ -58,16 +56,16 @@ body {
 
 #profile-pic img {
   border-radius: 50%;
-  height: 350px;
+  height: 250px;
   margin: 0 auto;
-  width: 350px;
+  width: 250px;
   display: block;
   -webkit-box-shadow: 6px 4px 14px 0px rgba(0,0,0,0.52);
   -moz-box-shadow: 6px 4px 14px 0px rgba(0,0,0,0.52);
   box-shadow: 6px 4px 14px 0px rgba(0,0,0,0.52);
 }
 #resume {
-  margin: 50px 0;
+  margin: 40px 0 0;
 }
 #resume a {
   color: #ffffff;
@@ -82,22 +80,13 @@ body {
   -moz-box-shadow: 3px 2px 13px 1px rgba(63, 63, 63, 0.52);
   box-shadow: 3px 2px 13px 1px rgba(63, 63, 63, 0.52);
 }
-
-/* #resume a:hover {
-  top:2px;
-  -webkit-box-shadow: 2px 0px 9px 1px rgba(63, 63, 63, 0.52);
-  -moz-box-shadow: 2px 0px 9px 1px rgba(63, 63, 63, 0.52);
-  box-shadow: 2px 0px 9px 1px rgba(63, 63, 63, 0.52);
-} */
-
-
-
 .site-container {
   display: flex;
   flex:1;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-height: 100vh;
 }
 .social-link {
   border: 3px solid #ffffff;
@@ -134,11 +123,50 @@ body {
 
 .summary-container {
   position: relative;
-  margin-bottom: 175px;
+  margin-bottom: 30px;
 }
-
+@media only screen and (min-width: 414px) {
+  h1 {
+    font-size: 10vw;
+    line-height: 0.9em;
+    margin: 0.1em;
+    white-space: nowrap;
+  }
+  #name-card {
+    padding: 30px 2%;
+  }
+  .summary-container {
+    margin-bottom: 40px;
+  }
+}
 @media only screen and (min-width: 768px) {
-    .site-container {
-      height: 100vh;
-    }
+  body {
+    overflow-y: hidden;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 58px;
+    white-space: nowrap;
+  }
+  #name-card {
+    border-radius: 20px;
+    padding: 30px 8%;
+    width: auto;
+  }
+  #profile-pic img {
+    width: 350px;
+    height: 350px; 
+  }
+  #resume {
+    margin-top: 50px;
+  }
+  .site-container {
+    height: 100vh;
+    margin-top: 0px;
+  }
+  .summary-container {
+    margin-bottom: 75px;
+  }
 }
